@@ -17,8 +17,9 @@ class TestDatetimePlotting:
     @pytest.mark.xfail(reason="Test for angle_spectrum not written yet")
     @mpl.style.context("default")
     def test_angle_spectrum(self):
+        data = np.random.randn(100)
         fig, ax = plt.subplots()
-        ax.angle_spectrum(...)
+        ax.angle_spectrum(data)
 
     @pytest.mark.xfail(reason="Test for annotate not written yet")
     @mpl.style.context("default")
